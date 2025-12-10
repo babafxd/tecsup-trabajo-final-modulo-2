@@ -1,6 +1,6 @@
 # 🏦 SISTEMA DE GESTIÓN BANCARIA
-# TRABAJO FINAL - ARQUITECTURA DE SOFTWARE
-Microservicio para realizar **TRANSFERENCIAS**, **DEPÓSITOS** y **RETIROS**, con validaciones y notificaciones por consola.
+# INSTRUCCIONES BÁSICAS DE EJECUCIÓN 
+Proyecto para realizar **TRANSFERENCIAS**, **DEPÓSITOS** y **RETIROS**, con validaciones y notificaciones por consola.
 
 ---
 ## Requisitos
@@ -22,6 +22,7 @@ Servicio por defecto:\
 `http://localhost:8080`
 
 ------------------------------------------------------------------------
+## También se adjunto archivo Postman de las peticiones: TECSUP - MODULO 2.postman_collection.json
 
 ## Endpoint consulta datos
 

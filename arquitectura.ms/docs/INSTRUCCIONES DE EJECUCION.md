@@ -1,6 +1,6 @@
 # 🏦 SISTEMA DE GESTIÓN BANCARIA
 # TRABAJO FINAL - ARQUITECTURA DE SOFTWARE
-Microservicio para realizar **TRANSFERENCIAS**, **DEPÓSITOS** y **RETIROS**, con validaciones y notificaciones por consola.
+Proyecto para realizar **TRANSFERENCIAS**, **DEPÓSITOS** y **RETIROS**, con validaciones y notificaciones por consola.
 
 ---
 ## Requisitos

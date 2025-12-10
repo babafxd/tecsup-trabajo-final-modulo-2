@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "24742a20-e925-4b37-830f-a44bfae53fd4",
+		"name": "TECSUP - MODULO 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2536568",
+		"_collection_link": "https://red-crescent-539306.postman.co/workspace/Bancoripley~f7b0e60f-a99a-4c42-ab12-68fc61c2b2b1/collection/2536568-24742a20-e925-4b37-830f-a44bfae53fd4?action=share&source=collection_link&creator=2536568"
+	},
+	"item": [
+		{
+			"name": "LISTAR CLIENTES",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJlNTg5NDg3OS0wOGIxLTRmMDEtOWMyMy05MTc5OTJjN2QzYjIiLCJhbGciOiJSUzI1NiJ9.eyJOb21icmUiOiJVU0VSLCBERVYgVE9UQUwiLCJvd25lciI6IlNJQ1UgLSBBdXRlbnRpY2FjacOzbiIsInN1YiI6Ijg3NjU0MzIxIiwicm9sZXMiOlsiUUEgRVhURVJOTyBQUk9WRUVET1IiLCJBTkFMSVNUQSBDQVRBU1RSQUwiLCJQRVJGSUwgVklTT1IiLCJJTlNQRUNUT1IiLCJJTlNQRUNUT1IgVUUiLCJTVVBFUlZJU09SIiwiU1VQRVJWSVNPUiBVRSIsIlFBIElOVEVSTk8gVUUiLCJFRElUT1IgR1JBRklDTyIsIlFBIEVYVEVSTk8gQ09OU1VMVE9SIiwiUUEgSU5URVJOTyJdLCJpc3MiOiJodHRwOi8vMTcyLjE2LjE2LjMzOjgwOTUiLCJjb2RpZ29fb3JnYW5pemFjaW9uIjo1LCJ1YmlnZW8iOiIxNTAxMzMiLCJub21icmVfb3JnYW5pemFjaW9uIjoiVU5JREFEIEVKRUNVVE9SQSAwMDMiLCJjb2RpZ29fdXN1YXJpbyI6MywiZGF0ZV9yZXF1ZXN0IjoiMjAyNS0wOS0yMFQxNTowNTowMS4yMDQ5NDY1NDIiLCJhdWQiOiJhcHAtd2ViLXNpY3UiLCJuYmYiOjE3NTgzOTg3MDEsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE3NTg0MjAzMDEsImlhdCI6MTc1ODM5ODcwMX0.cNt_r-jkTf2w9dTHK5R-ftXodCNiTklI6v8xzIxyMKKs3ZJp0Ggln4xBFCJ1udv6aCbV842mfc9LxX5_Jgi3M6UKNWlGPLquh6EddnJEAiy3mt3COiqypejF5GE_tiWwHhPDrCnReEcy41knpQPw6k4g0QolaXEgWdKLuiuOIPQXmVpJuiLYz4Tk-dVEmVxtzyNnqgjJRjWKDIT--TZ15iUOL7DUAi0Av9IO-khQBml1gugwmVkVLiEhal09MfeaXCLiyyb29z8lIezvoxlJKdrhD-R4NZXzBf1Ot9uDV0pnYdRRW-CqK9j6HjsC2OAlNG11YKEkIFipPhZRgTRCPw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREAR CLIENTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"nombre\": \"MARCO SAAVEDRA CASTRO\",\r\n    \"email\": \"xd@gmail.com\",\r\n    \"documento\": \"45954571\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR CUENTAS BANCARIAS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE CUENTA BANCARIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clienteId\": \"CLI004\",\r\n    \"saldo\": 15000.88,\r\n    \"numeroCuenta\": \"0001-234573\",\r\n    \"estado\": \"ACTIVO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTAR SALDO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/account/search?numeroCuenta=0001-234573",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"account",
+						"search"
+					],
+					"query": [
+						{
+							"key": "numeroCuenta",
+							"value": "0001-234573"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTAR TRANSACCIONES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TRANSFERENCIA BANCARIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cuentaOrigenId\": \"CTA001\",\r\n    \"cuentaDestinoId\": \"CTA001\",\r\n    \"monto\": 94500.00,\r\n    \"comision\": 5.00,\r\n    \"tipo\": \"TRANSFERENCIA\",\r\n    \"descripcion\": \"transferencia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
