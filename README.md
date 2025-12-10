@@ -22,7 +22,10 @@ Servicio por defecto:\
 `http://localhost:8080`
 
 ------------------------------------------------------------------------
-## También se adjunto archivo Postman de las peticiones: TECSUP - MODULO 2.postman_collection.json
+## También se adjunta archivo Postman de las peticiones: 
+```
+TECSUP - MODULO 2.postman_collection.json
+```
 
 ## Endpoint consulta datos
 
